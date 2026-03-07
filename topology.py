@@ -22,7 +22,7 @@ def run_topology():
     net.addLink(h1, r1, intfName2='r1-eth1', params2={'ip':'10.0.1.1/24'})
     
     #Router r1 to server h2
-    net.addLink(r1, h2, intfName='r1-eth2', params1={'ip':'10.0.2.1/24'}, loss=4, delay='5ms', bw=10)
+    net.addLink(r1, h2, intfName1='r1-eth2', params1={'ip':'10.0.2.1/24'}, loss=4, delay='5ms', bw=10)
     
     info('Starting Network\n')
     net.start()

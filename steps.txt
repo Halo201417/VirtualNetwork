@@ -1,3 +1,4 @@
+RENO
 #1
 We ensure that the network is connected
 h1 ping -c 50 h2
@@ -18,3 +19,8 @@ h1 iperf3 -c 10.0.2.2 -t 20
 
 Now we stop the packet capture
 h1 killall tcpdump
+
+BBR
+#1 Activate FQ and BBR
+FQ -> Fair Queuing (FQ) networking is a packet scheduling algorithm that ensures fair bandwidth distribution by separating traffic into individual flows
+
